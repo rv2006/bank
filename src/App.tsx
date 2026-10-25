@@ -1865,14 +1865,14 @@ export default function App() {
     const [custName, setCustName] = useState('');
     const [custEmail, setCustEmail] = useState('');
     const [custPhone, setCustPhone] = useState('');
-    const [custAddress, setCustAddress] = useState('');
+    const [custAddress] = useState('');
     const [custDob, setCustDob] = useState('2000-01-15');
 
     // New Account State
     const [primaryCust, setPrimaryCust] = useState(db.CUSTOMER[0]?.customer_id || '');
     const [jointCust, setJointCust] = useState('NONE');
     const [branchId, setBranchId] = useState('BR01');
-    const [accType, setAccType] = useState('SAVINGS');
+    const [accType] = useState('SAVINGS');
     const [initDeposit, setInitDeposit] = useState('5000');
 
     // New Card State
